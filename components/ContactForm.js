@@ -41,6 +41,6 @@ var ContactForm = React.createClass({
 
 */
 
-    )
+    );
   },
 });
