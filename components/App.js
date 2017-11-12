@@ -32,7 +32,7 @@ var App = React.createClass({
         <p className={'appTitle'}>moje kontakty</p>
         <ContactForm contact={contactForm}>
           <div className={'personBox'}>
-            <Contacts items="contacts"></Contacts>
+            <Contacts items={'contacts'}></Contacts>
           </div>
         </ContactForm>
       </div>
