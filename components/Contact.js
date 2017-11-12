@@ -45,6 +45,6 @@ var Contact = React.createClass({
 
 */
 
-    )
+);
   },
 });
