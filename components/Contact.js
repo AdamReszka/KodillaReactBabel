@@ -18,9 +18,19 @@ var Contact = React.createClass({
       }
     return (
 
+      <li className={'contactItem'}>
+        <div className={'imageCont'}>
+          <img className={'contactImage'} src={'images/' +contactSex+ '.png'}/>
+        </div>
+        <p className={'contactLabel'}>
+          {this.props.item.firstName + ' ' + this.props.item.lastName}
+        </p>
+        <a href={'mailto:' + this.props.item.email}>
+          {this.props.item.email}
+        </a>
+      </li>
 
-
-      React.createElement('li', {className: 'contactItem'},
+  /*    React.createElement('li', {className: 'contactItem'},
         React.createElement('div', {className: 'imageCont'},
           React.createElement('img', {
             className: 'contactImage',
@@ -29,9 +39,12 @@ var Contact = React.createClass({
         ),
 
         React.createElement('p', {className: 'contactLabel'}, this.props.item.firstName + ' ' + this.props.item.lastName),
-        /*React.createElement('p', {className: 'contactLabel'}, 'Nazwisko: ' + ),*/
+        React.createElement('p', {className: 'contactLabel'}, 'Nazwisko: ' + ),
         React.createElement('a', {className: 'contactEmail', href: 'mailto:' + this.props.item.email}, this.props.item.email)
       )
+
+*/
+
     )
   },
 });
