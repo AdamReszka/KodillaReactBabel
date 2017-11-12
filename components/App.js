@@ -30,11 +30,10 @@ var App = React.createClass({
     return (
       <div className={'app'}>
         <p className={'appTitle'}>moje kontakty</p>
-        <ContactForm contact={contactForm}>
-          <div className={'personBox'}>
-            <Contacts items={'contacts'}></Contacts>
-          </div>
-        </ContactForm>
+        <ContactForm contact={contactForm} />
+        <div className={'personBox'}>
+          <Contacts items={'contacts'}></Contacts>
+        </div>
       </div>
 
     /*  React.createElement('div', {className: 'app'},
