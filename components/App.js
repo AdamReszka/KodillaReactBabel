@@ -35,16 +35,6 @@ var App = React.createClass({
           <Contacts items={contacts}></Contacts>
         </div>
       </div>
-
-    /*  React.createElement('div', {className: 'app'},
-        React.createElement('p', {className: 'appTitle'}, 'moje kontakty'),
-        React.createElement(ContactForm, {contact: contactForm}),
-        React.createElement('div', {className: 'personBox'},
-          React.createElement(Contacts, {items: contacts}, {})
-        )
-
-      )*/
-      );
-
+    );
   }
 });
